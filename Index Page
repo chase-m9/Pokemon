@@ -1,1 +1,187 @@
+This is the link: http://127.0.0.1:5500/index.html
 
+This is the code:
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <div class="nav-wrapper">
+        <nav>
+            <div class="logo2"></div>
+            <div class="logo">Team Assignment</div>
+
+            <div class="coloured">
+                <div class="links">
+                    <div class="bold">
+                        <a href="index.html">Home</a>
+                        <a href="character1.html">Character Page 1</a>
+                        <a href="character2.html">Character Page 2</a>
+                        <a href="character3.html">Character Page 3</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="contentWrapper">
+
+        <body> Hello this is so some filler content about pokémon! The hero image is Pikachu which is an electric
+            pokémon!!!
+        </body>
+        <div class="hero">
+            <div class="heroText2P"></div>
+            <div class="heroTextP">Pokémon!</div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footText">
+            <div class="footLogo">© Team Assignment 2025</div>
+            | Terms | Privacy | Cookies
+        </div>
+    </footer>
+</body>
+
+</html>
+
+This is the CSS:
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background: rgb(255, 248, 212);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: rgb(51, 133, 195);
+}
+
+nav {
+  padding: 15px 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(51, 133, 195);
+}
+
+nav2 {
+  padding: 15px 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(51, 133, 195);
+}
+
+nav3 {
+  padding: 15px 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(51, 133, 195);
+}
+
+nav4 {
+  padding: 15px 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(51, 133, 195);
+}
+
+nav5 {
+  padding: 15px 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(51, 133, 195);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 70px;
+  flex: 500px;
+}
+
+.links a {
+  margin-left: 12px;
+  text-decoration: none;
+  color: rgb(51, 133, 195);
+  font-weight: 500;
+}
+
+.links a:hover {
+  opacity: 0.6;
+}
+
+.contentWrapper {
+  width: 90%;
+  margin: 20px auto;
+  flex: 1;
+}
+
+.heroTextP {
+  opacity: 100%;
+  font-size: 85px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px rgba(2, 6, 12, 0.579);
+}
+
+.hero {
+  background-image: url("../images/pokemonheader.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 187px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-align: center;
+  padding: 60px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  color: rgb(51, 133, 195);
+  background: rgb(255, 248, 212);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footLogo {
+  font-weight: 600;
+}
