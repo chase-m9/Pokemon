@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background: rgb(255, 248, 212);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: rgb(51, 133, 195);
+  padding-bottom: 80px;  
+}
+
+
+nav {
+  padding: 15px 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(51, 133, 195);
+}
+
+nav2 {
+  padding: 15px 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(51, 133, 195);
+}
+
+nav3 {
+  padding: 15px 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(51, 133, 195);
+}
+
+nav4 {
+  padding: 15px 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(51, 133, 195);
+}
+
+nav5 {
+  padding: 15px 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(51, 133, 195);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 70px;
+  flex: 500px;
+}
+
+.links a {
+  margin-left: 12px;
+  text-decoration: none;
+  color: rgb(51, 133, 195);
+  font-weight: 500;
+}
+
+.links a:hover {
+  opacity: 0.6;
+}
+
+.contentWrapper {
+  width: 90%;
+  margin: 20px auto;
+  flex: 1;
+}
+
+
+.hero {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  padding: 60px 0;
+  background-image: url("../images/pokemonheader.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero img {
+  width: 80%;      
+  max-width: 600px; 
+  height: auto;   
+  margin: 0 auto;   
+  display: block;   
+}
+
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  color: rgb(51, 133, 195);
+  background: rgb(255, 248, 212);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footLogo {
+  font-weight: 600;
+}
+
+/* Styles for character pages */
+
+        .contentWrapper {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contentWrapper img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+
+        
+        section {
+            margin-bottom: 30px;
+        }
+
+        h1, h2 {
+            color: rgb(51, 133, 195);
+            text-align: center;
+        }
+
+        p, ul {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+  
+
+
+
+
+
+.pokemon {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.pokemon img {
+  width: 80px;   
+  height: 80px;  
+  object-fit: contain; 
+  border-radius: 4px;
+}
+
+/* Form wrapper */
+.pokemon-form {
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Input fields */
+.pokemon-form input[type="text"] {
+  padding: 10px 12px;
+  border: 1px solid #d8c893;
+  border-radius: 8px;
+  font-size: 16px;
+  color: rgb(51, 133, 195);
+  background: #fffbe0;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.pokemon-form input[type="text"]::placeholder {
+  color: rgba(51, 133, 195, 0.5);
+}
+
+/* Input focus effect */
+.pokemon-form input[type="text"]:focus {
+  outline: none;
+  border-color: rgb(51, 133, 195);
+  box-shadow: 0 0 5px rgba(51, 133, 195, 0.3);
+}
+
+/* Submit button */
+.pokemon-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(51, 133, 195);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.pokemon-form button:hover {
+  background-color: rgb(30, 100, 170);
+  transform: scale(1.02);
+}
+
+/* edit and delete-buttons */
+.pokemon-actions button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin-left: 6px;
+}
+
+.edit-btn {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 8px;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+  border-radius: 8px;
+}
+
+/* Delete button (red for danger) */
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border-radius: 8px;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+  border-radius: 8px;
+}
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Processing Form</title>
+</head>
+
+<body>
+
+<script>
+    // Read the form data from the URL
+    const $_GET = location.search
+        .replace("?", "")
+        .split("&")
+        .map(pair => pair.split("=").reduce((key, value) => ({ [key]: decodeURIComponent(value) })))
+        .reduce((acc, obj) => ({ ...acc, ...obj }), {});
+
+    let $fullName = $_GET["fullname"];
+    let $email = $_GET["email"];
+    let $phone = $_GET["phone"];
+    let $comment = $_GET["comment"];
+
+    // Email subject line
+    let $subject = "Contact Form Submission";
+
+    // CHANGE THIS TO YOUR TEAMMATE'S IU EMAIL (ideally Leader) 
+    let $to = "yourname@iu.edu";
+
+    // Build the email body
+    let $Body = "";
+    $Body += "Name: " + $fullName + "\n";
+    $Body += "Phone Number: " + $phone + "\n";
+    $Body += "Email: " + $email + "\n";
+    $Body += "Comments: " + $comment + "\n";
+
+    // If required fields are filled out, open the user's email app
+    if ($fullName && $email) {
+        window.open(
+            `mailto:${$to}?subject=${encodeURIComponent($subject)}&body=${encodeURIComponent($Body)}`,
+            "_blank"
+        );
+
+        // Send the user to the thank-you page
+        location.href = "thanks.html";
+    } else {
+        // If name or email missing, return to the contact form
+        location.href = "contact.html";
+    }
+</script>
+
+</body>
+</html>
