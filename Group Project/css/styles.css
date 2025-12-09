@@ -311,7 +311,7 @@ footer {
 
 
 /* Contact Form */
-form[action="simpleForm.html"] {
+form[action="thanks.html"] {
   width: 90%;
   max-width: 720px;
   margin: 24px auto 40px auto;
@@ -322,17 +322,17 @@ form[action="simpleForm.html"] {
   box-sizing: border-box;
 }
 
-form[action="simpleForm.html"] label {
+form[action="thanks.html"] label {
   display: block;
   margin: 10px 0 6px 0;
   font-weight: 600;
   color: rgb(38, 98, 144);
 }
 
-form[action="simpleForm.html"] input[type="text"],
-form[action="simpleForm.html"] input[type="email"],
-form[action="simpleForm.html"] input[type="tel"],
-form[action="simpleForm.html"] textarea {
+form[action="thanks.html"] input[type="text"],
+form[action="thanks.html"] input[type="email"],
+form[action="thanks.html"] input[type="tel"],
+form[action="thanks.html"] textarea {
   width: 100%;
   padding: 10px 12px;
   border: 1px solid #c0c0c0;
@@ -350,11 +350,11 @@ form[action="simpleForm.html"] textarea {
   justify-content: center;
 }
 
-form[action="simpleForm.html"] textarea {
+form[action="thanks.html"] textarea {
   resize: vertical;
 }
 
-form[action="simpleForm.html"] button[type="submit"] {
+form[action="thanks.html"] button[type="submit"] {
   display: block;
   margin: 18px auto 0 auto;
   padding: 12px 20px;
@@ -366,7 +366,7 @@ form[action="simpleForm.html"] button[type="submit"] {
   cursor: pointer;
 }
 
-form[action="simpleForm.html"] button[type="submit"]:hover {
+form[action="thanks.html"] button[type="submit"]:hover {
   background-color: #2e6aa9;
   transform: scale(1.05);
 }
